@@ -16,7 +16,7 @@ def main():
     if st.button("Dịch sang tiếng Việt"):  
             with st.spinner("Đang dịch..."):
                 pred_sentences = translator(text_input, num_beams=3)
-                pred_sentence = pred_sentences[0]['translation_text']
+                pred_sentence = pred_sentences[0]['generated_text']
             st.success(f'**Câu gốc:** {text_input}')
             st.success(f'**Bản dịch:** {pred_sentence}')
 
