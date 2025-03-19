@@ -3,7 +3,7 @@ import torch
 from transformers import pipeline
 
 
-translator = pipeline("translation_en_to_vi", model="hai2131/mt-en-vi")
+translator = pipeline(model="hai2131/mt-en-vi")
 
 def main():
     st.set_page_config(page_title="En-Vi Translator", page_icon="🌍")
